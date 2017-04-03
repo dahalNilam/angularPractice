@@ -7,14 +7,20 @@
 <body ng-controller="exCtrl">
     <h1>NG-Model Examples</h1>
     <div>
-        <p>TextBox: <input type="text" ng-model="textString"></input>
-        </p>
-        <p>CheckBox: <input type="checkbox" ng-model="checkBox"></input>
+        <p>TextBox: <input type="text" ng-model="textString"></input></p>
+        <p>CheckBox: <input type="checkbox" ng-model="checkBox"></input></p>
+        <p>Date: <input type="date" ng-model="dateValue"></input></p>
+        <p>Radio: 
+            <label><input type="radio" ng-model="radioValue" value="option1">Option 1</input></label>
+            <label><input type="radio" ng-model="radioValue" value="option2">Option 2</input></label>
+            <label><input type="radio" ng-model="radioValue" value="option3">Option 3</input></label>
         </p>
     </div>
     <div>
         <p>TextBox Output : {{textString}}</p>
         <p>CheckBox Output : {{checkBox}}</p>
+        <p>Date Output : {{dateValue}}</p>
+        <p>Radio Output : {{radioValue}}</p>
     </div>
 
 
