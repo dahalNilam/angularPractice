@@ -1,11 +1,25 @@
-<html>
-    <head>
-        <title>More NG-Model Examples</title>
-    </head>
-    <body>
-        <h1>NG-Model Examples</h1>
-        <script src="angular.js"></script>
-        <script src="myapp.js"></script>
-  src   </body>
-    </body>
+<html ng-app="ngModuleEx">
+
+<head>
+    <title>More NG-Model Examples</title>
+</head>
+
+<body ng-controller="exCtrl">
+    <h1>NG-Model Examples</h1>
+    <div>
+        <p>TextBox: <input type="text" ng-model="textString"></input>
+        </p>
+        <p>CheckBox: <input type="checkbox" ng-model="checkBox"></input>
+        </p>
+    </div>
+    <div>
+        <p>TextBox Output : {{textString}}</p>
+        <p>CheckBox Output : {{checkBox}}</p>
+    </div>
+
+
+    <script src="angular.js"></script>
+    <script src="myapp.js"></script>
+</body>
+
 </html>
